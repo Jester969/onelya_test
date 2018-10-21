@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.onelya.qa</groupId>
+    <artifactId>test-core</artifactId>
+    <version>0.1</version>
+
+    <description>Onelya Auto Testing Framework</description>
+    <organization>
+        <name>Onelya</name>
+        <url>www.onelya.ru</url>
+    </organization>
+
+    <properties>
+
+        <version.teasy>2.0.3</version.teasy>
+
+        <run.environment>DEFAULT</run.environment>
+        <run.browser>DEFAULT</run.browser>
+
+        <application.selenium.timeout>60</application.selenium.timeout>
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.wiley</groupId>
+            <artifactId>teasy</artifactId>
+            <version>${version.teasy}</version>
+        </dependency>
+
+    </dependencies>
+
+    <profiles>
+
+        <profile>
+            <id>run-on-dev</id>
+            <properties>
+                <run.environment>DEV</run.environment>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>run-on-qa</id>
+            <properties>
+                <run.environment>QA</run.environment>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>run-in-chrome</id>
+            <properties>
+                <run.browser>CHROME</run.browser>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>run-in-firefox</id>
+            <properties>
+                <run.browser>FIREFOX</run.browser>
+            </properties>
+        </profile>
+    </profiles>
+
+</project>
