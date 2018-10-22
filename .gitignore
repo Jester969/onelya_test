@@ -14,7 +14,7 @@
 .idea/*
 
 # Allure reports
-.allure-results/*
+allure-results/*
 
 # Package Files #
 *.jar
