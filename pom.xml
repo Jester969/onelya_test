@@ -15,28 +15,53 @@
     </organization>
 
     <properties>
-
+        <version.java>1.8</version.java>
         <version.teasy>2.0.3</version.teasy>
 
         <run.environment>DEFAULT</run.environment>
         <run.browser>DEFAULT</run.browser>
+        <run.with.grid>false</run.with.grid>
 
         <application.selenium.timeout>60</application.selenium.timeout>
-
+        <application.selenium.grid.url>http://localhost:4444</application.selenium.grid.url>
     </properties>
 
-    <dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <source>${version.java}</source>
+                    <target>${version.java}</target>
+                </configuration>
+            </plugin>
 
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <systemPropertyVariables>
+                        <run.environment>${run.environment}</run.environment>
+                        <teasy.browser>${run.browser}</teasy.browser>
+                        <teasy.gridHubUrl>${application.selenium.grid.url}</teasy.gridHubUrl>
+                        <teasy.runWithGrid>${run.with.grid}</teasy.runWithGrid>
+                        <teasy.timeout>${application.selenium.timeout}</teasy.timeout>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
         <dependency>
             <groupId>com.wiley</groupId>
             <artifactId>teasy</artifactId>
             <version>${version.teasy}</version>
         </dependency>
-
     </dependencies>
 
     <profiles>
-
         <profile>
             <id>run-on-dev</id>
             <properties>
