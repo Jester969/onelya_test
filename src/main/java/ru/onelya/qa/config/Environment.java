@@ -1,4 +1,4 @@
-package ru.onelya.qa.base;
+package ru.onelya.qa.config;
 
 public enum Environment {
 
