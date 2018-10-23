@@ -7,8 +7,10 @@ public class TST04_SubmittingValidPaymentDetails extends CreditCardValidationBas
 
     @Test
     public void test_TST04_SubmittingValidPaymentDetails() {
-        navigateToCreditCardDetailsPage()
 
+        navigateToCreditCardDetailsPage();
+
+        fillAllInputsWithValidData()
                 .clickCreditCardSubmitButton()
                 .checkCreditCardErrorElementIsAbsent();
 

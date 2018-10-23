@@ -16,6 +16,31 @@ public class CreditCardDetailsPage extends ProjectBasePage {
     private static final By CREDIT_CARD_SUBMIT_BUTTON_LOCATOR = By.cssSelector("#submit");
     private static final By CREDIT_CARD_ERROR_LOCATOR = By.cssSelector(".error");
 
+    public CreditCardDetailsPage inputCreditCardNumber(String cardNumber) {
+        getCreditCardNumberElement().clearAndType(cardNumber);
+        return this;
+    }
+
+    public CreditCardDetailsPage inputCreditCardCvv(String cvv) {
+        getCreditCardCvvElement().clearAndType(cvv);
+        return this;
+    }
+
+    public CreditCardDetailsPage inputCreditCardExpirationMonth(String expirationMonth) {
+        getCreditCardExpirationMonthElement().clearAndType(expirationMonth);
+        return this;
+    }
+
+    public CreditCardDetailsPage inputCreditCardExpirationYear(String expirationYear) {
+        getCreditCardExpirationYearElement().clearAndType(expirationYear);
+        return this;
+    }
+
+    public CreditCardDetailsPage inputCreditCardAmount(String amount) {
+        getCreditCardAmountElement().clearAndType(amount);
+        return this;
+    }
+
     public CreditCardDetailsPage checkCreditCardFormElementIsDisplayed() {
         getCreditCardFormElement().should().beDisplayed();
         return this;

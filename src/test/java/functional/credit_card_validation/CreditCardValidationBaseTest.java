@@ -23,6 +23,11 @@ public class CreditCardValidationBaseTest extends UiBaseTest {
     }
 
     protected CreditCardDetailsPage fillAllInputsWithValidData() {
-        return PageProvider.get(CreditCardDetailsPage.class, CREDIT_CARD_FORM_URL);
+        return PageProvider.get(CreditCardDetailsPage.class)
+                .inputCreditCardNumber(CREDIT_CARD_VALID_NUMBER)
+                .inputCreditCardCvv(CREDIT_CARD_VALID_CVV)
+                .inputCreditCardExpirationMonth(CREDIT_CARD_VALID_EXPIRATION_MONTH)
+                .inputCreditCardExpirationYear(CREDIT_CARD_VALID_EXPIRATION_YEAR)
+                .inputCreditCardAmount(CREDIT_CARD_VALID_AMOUNT);
     }
 }
