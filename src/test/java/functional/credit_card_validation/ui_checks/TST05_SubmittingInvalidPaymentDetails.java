@@ -25,7 +25,7 @@ public class TST05_SubmittingInvalidPaymentDetails extends CreditCardValidationB
         PageProvider.get(CreditCardDetailsPage.class)
                 .inputCreditCardNumber(invalidCardNumber)
                 .clickCreditCardSubmitButton()
-                .checkCreditCardErrorElementIsAbsent();
+                .checkCreditCardErrorElementIsDisplayed();
     }
 
     @Test(dataProviderClass = CreditCardValidationDataProviders.class, dataProvider = "invalidCvv")
@@ -33,7 +33,7 @@ public class TST05_SubmittingInvalidPaymentDetails extends CreditCardValidationB
         PageProvider.get(CreditCardDetailsPage.class)
                 .inputCreditCardCvv(invalidCvv)
                 .clickCreditCardSubmitButton()
-                .checkCreditCardErrorElementIsAbsent();
+                .checkCreditCardErrorElementIsDisplayed();
     }
 
     // Same approach goes for other parameters...
