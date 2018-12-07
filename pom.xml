@@ -8,10 +8,10 @@
     <artifactId>test-core</artifactId>
     <version>0.1</version>
 
-    <description>Onelya Auto Testing Framework</description>
+    <description>Acme Auto Testing Framework</description>
     <organization>
-        <name>Onelya</name>
-        <url>www.onelya.ru</url>
+        <name>Acme</name>
+        <url>www.Acme.com</url>
     </organization>
 
     <properties>

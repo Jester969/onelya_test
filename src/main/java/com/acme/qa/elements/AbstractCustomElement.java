@@ -1,4 +1,4 @@
-package ru.onelya.qa.elements;
+package com.acme.qa.elements;
 
 import com.wiley.elements.SearchStrategy;
 import com.wiley.holders.DriverHolder;

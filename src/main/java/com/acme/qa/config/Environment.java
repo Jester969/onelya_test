@@ -1,4 +1,4 @@
-package ru.onelya.qa.config;
+package com.acme.qa.config;
 
 public enum Environment {
 

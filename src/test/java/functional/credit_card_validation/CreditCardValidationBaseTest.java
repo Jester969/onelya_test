@@ -1,11 +1,11 @@
 package functional.credit_card_validation;
 
+import com.acme.qa.base.UiBaseTest;
+import com.acme.qa.config.Environment;
+import com.acme.qa.pages.credit_card_validation.CreditCardDetailsPage;
 import com.wiley.page.PageProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.onelya.qa.base.UiBaseTest;
-import ru.onelya.qa.config.Environment;
-import ru.onelya.qa.pages.credit_card_validation.CreditCardDetailsPage;
 
 public class CreditCardValidationBaseTest extends UiBaseTest {
 

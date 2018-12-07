@@ -1,9 +1,9 @@
-package ru.onelya.qa.pages.credit_card_validation;
+package com.acme.qa.pages.credit_card_validation;
 
+import com.acme.qa.elements.TextField;
+import com.acme.qa.pages.ProjectBasePage;
 import com.wiley.elements.TeasyElement;
 import org.openqa.selenium.By;
-import ru.onelya.qa.elements.TextField;
-import ru.onelya.qa.pages.ProjectBasePage;
 
 public class CreditCardDetailsPage extends ProjectBasePage {
 

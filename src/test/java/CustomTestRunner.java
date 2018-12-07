@@ -1,7 +1,7 @@
+import com.acme.qa.base.UiBaseTest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
-import ru.onelya.qa.base.UiBaseTest;
 
 /**
  * Custom test runner for debugging purposes, do not include to actual test profiles.

@@ -1,4 +1,4 @@
-package ru.onelya.qa.base;
+package com.acme.qa.base;
 
 import com.wiley.basetests.SeleniumBaseTest;
 import com.wiley.driver.WebDriverFactory;

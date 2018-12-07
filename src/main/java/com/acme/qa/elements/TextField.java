@@ -1,4 +1,4 @@
-package ru.onelya.qa.elements;
+package com.acme.qa.elements;
 
 import com.wiley.elements.TeasyElement;
 import com.wiley.elements.find.VisibleElementLookUp;

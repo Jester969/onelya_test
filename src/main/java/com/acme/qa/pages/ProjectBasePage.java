@@ -1,8 +1,8 @@
-package ru.onelya.qa.pages;
+package com.acme.qa.pages;
 
+import com.acme.qa.elements.TextField;
 import com.wiley.page.BasePage;
 import org.openqa.selenium.By;
-import ru.onelya.qa.elements.TextField;
 
 public class ProjectBasePage extends BasePage {
 
