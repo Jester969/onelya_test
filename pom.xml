@@ -16,7 +16,7 @@
 
     <properties>
         <version.java>1.8</version.java>
-        <version.teasy>2.0.3</version.teasy>
+        <version.teasy>2.0.6</version.teasy>
 
         <run.environment>DEFAULT</run.environment>
         <run.browser>DEFAULT</run.browser>
