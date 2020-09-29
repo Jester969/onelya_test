@@ -1,9 +1,9 @@
-package functional.credit_card_validation.ui_checks;
+package functional.creditcard.ui;
 
 import com.acme.qa.pages.credit_card_validation.CreditCardDetailsPage;
 import com.wiley.page.PageProvider;
-import functional.credit_card_validation.CreditCardValidationBaseTest;
-import functional.credit_card_validation.CreditCardValidationDataProviders;
+import functional.creditcard.CreditCardValidationBaseTest;
+import functional.creditcard.CreditCardValidationDataProviders;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

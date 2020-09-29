@@ -1,4 +1,4 @@
-package functional.credit_card_validation;
+package functional.creditcard;
 
 import com.acme.qa.base.UiBaseTest;
 import com.acme.qa.config.Environment;

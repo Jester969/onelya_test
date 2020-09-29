@@ -1,6 +1,6 @@
-package functional.credit_card_validation.ui_checks;
+package functional.creditcard.ui;
 
-import functional.credit_card_validation.CreditCardValidationBaseTest;
+import functional.creditcard.CreditCardValidationBaseTest;
 import org.testng.annotations.Test;
 
 public class TST04_SubmittingValidPaymentDetails extends CreditCardValidationBaseTest {

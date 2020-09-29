@@ -1,4 +1,4 @@
-package functional.credit_card_validation;
+package functional.creditcard;
 
 import org.testng.annotations.DataProvider;
 
